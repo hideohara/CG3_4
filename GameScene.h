@@ -7,6 +7,10 @@
 #include "Object3d.h"
 #include "Sprite.h"
 #include <DirectXMath.h>
+#include "Light.h"
+#include <sstream>
+#include <iomanip>
+
 
 /// <summary>
 /// ゲームシーン
@@ -71,6 +75,8 @@ private: // メンバ変数
 
 	Model* modelSphere = nullptr;
 	Object3d* objSphere = nullptr;
+
+	Light* light = nullptr;
 
 
 };
