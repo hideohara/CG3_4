@@ -129,6 +129,14 @@ public: // メンバ関数
 
 	void SetBillboard(bool isBillboard) { this->isBillboard = isBillboard; }
 
+	/// <summary>
+	/// 回転角の取得
+	/// </summary>
+	/// <returns>回転角</returns>
+	const XMFLOAT3& GetRotation() { return rotation; }
+
+
+
 private: // メンバ変数
 	ComPtr<ID3D12Resource> constBuffB0; // 定数バッファ
 	// 色
